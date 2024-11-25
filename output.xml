@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.10.2 on win32)" generated="2024-11-22T12:32:57.448052" rpa="false" schemaversion="5">
+<suite id="s1" name="TEST" source="C:\Users\Malathesh Gujjar\Desktop\python_arpita\TEST.robot">
+<test id="s1-t1" name="Arpita" line="34">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=Uiautomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-11-22T12:32:57.746183" elapsed="6.916584"/>
+</kw>
+<kw name="Get Value From User" owner="Dialogs">
+<msg time="2024-11-22T12:33:14.614515" level="INFO">${empid} = EMP001</msg>
+<var>${empid}</var>
+<arg>Enter your name:</arg>
+<doc>Pauses execution and asks user to input a value.</doc>
+<status status="PASS" start="2024-11-22T12:33:04.663775" elapsed="9.950740"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-11-22T12:33:14.623897" level="INFO">The entered name is: EMP001</msg>
+<arg>The entered name is: ${empid}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-11-22T12:33:14.614515" elapsed="0.009382"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-11-22T12:33:20.706175" level="INFO">xpath criteria: //android.widget.EditText[@index="5"]
+xpath criteria: //android.widget.EditText[@index="5"]
+xpath criteria: //android.widget.EditText[@index="5"]
+xpath criteria: //android.widget.EditText[@index="5"]
+xpath criteria: //android.widget.EditText[@index="5"]
+xpath criteria: //android.widget.EditText[@index="5"]
+xpath criteria: //android.widget.EditText[@index="5"]
+xpath criteria: //android.widget.EditText[@index="5"]
+xpath criteria: //android.widget.EditText[@index="5"]
+xpath criteria: //android.widget.EditText[@index="5"]</msg>
+<arg>${USER_ID}</arg>
+<arg>20s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-11-22T12:33:14.623897" elapsed="6.082278"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-11-22T12:33:20.706175" level="INFO">Clicking element '//android.widget.EditText[@index="5"]'.</msg>
+<msg time="2024-11-22T12:33:22.085962" level="INFO">xpath criteria: //android.widget.EditText[@index="5"]</msg>
+<arg>${USER_ID}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-11-22T12:33:20.706175" elapsed="1.379787"/>
+</kw>
+<kw name="Input Text Into Current Element" owner="AppiumLibrary">
+<msg time="2024-11-22T12:33:22.085962" level="INFO">Typing text 'EMP001' into current text field</msg>
+<arg>${empid}</arg>
+<doc>Types the given `text` into currently selected text field.</doc>
+<status status="PASS" start="2024-11-22T12:33:22.085962" elapsed="0.258328"/>
+</kw>
+<kw name="Hide Keyboard" owner="AppiumLibrary">
+<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press
+a particular key, ex. `Done`. In Android, no parameters are used.</doc>
+<status status="PASS" start="2024-11-22T12:33:22.344290" elapsed="0.996386"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-11-22T12:33:23.340676" level="INFO">Clicking element '//android.widget.EditText[@index="6"]'.</msg>
+<msg time="2024-11-22T12:33:23.967312" level="INFO">xpath criteria: //android.widget.EditText[@index="6"]</msg>
+<arg>${PASS}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-11-22T12:33:23.340676" elapsed="0.626636"/>
+</kw>
+<kw name="Input Text Into Current Element" owner="AppiumLibrary">
+<msg time="2024-11-22T12:33:23.967312" level="INFO">Typing text '123456789' into current text field</msg>
+<arg>123456789</arg>
+<doc>Types the given `text` into currently selected text field.</doc>
+<status status="PASS" start="2024-11-22T12:33:23.967312" elapsed="1.805038"/>
+</kw>
+<kw name="Hide Keyboard" owner="AppiumLibrary">
+<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press
+a particular key, ex. `Done`. In Android, no parameters are used.</doc>
+<status status="PASS" start="2024-11-22T12:33:25.772350" elapsed="2.651264"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-11-22T12:33:28.425610" level="INFO">Clicking element '//android.widget.Button[@index="8"]'.</msg>
+<msg time="2024-11-22T12:33:30.808024" level="INFO">xpath criteria: //android.widget.Button[@index="8"]</msg>
+<arg>${LOGIN_BUT}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-11-22T12:33:28.423614" elapsed="2.384410"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:32:57.730553" elapsed="33.077471"/>
+</test>
+<status status="PASS" start="2024-11-22T12:32:57.448052" elapsed="33.359972"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TEST">TEST</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
